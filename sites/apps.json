@@ -1,0 +1,12 @@
+{
+    "dairy_management": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "f349b2cd78ec8150c5fd7594840fd693c79d09a7",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 1,
+        "version": "0.0.1"
+    }
+}

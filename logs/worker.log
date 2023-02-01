@@ -1,0 +1,293 @@
+11:08:31 Worker rq:worker:1f074e002d054fde9a5b77b47702746f: started, version 1.11.1
+11:08:31 Subscribing to channel rq:pubsub:1f074e002d054fde9a5b77b47702746f
+11:08:31 *** Listening on home-abhishek-dairy_management:short, home-abhishek-dairy_management:default, home-abhishek-dairy_management:long...
+11:08:31 Cleaning registries for queue: home-abhishek-dairy_management:short
+11:08:31 Cleaning registries for queue: home-abhishek-dairy_management:default
+11:08:31 Cleaning registries for queue: home-abhishek-dairy_management:long
+11:09:56 Warm shut down requested
+11:09:56 Unsubscribing from channel rq:pubsub:1f074e002d054fde9a5b77b47702746f
+11:11:24 Worker rq:worker:3cd7b6d8da4246b9bab353ecd710d426: started, version 1.11.1
+11:11:24 Subscribing to channel rq:pubsub:3cd7b6d8da4246b9bab353ecd710d426
+11:11:24 *** Listening on home-abhishek-dairy_management:short, home-abhishek-dairy_management:default, home-abhishek-dairy_management:long...
+11:11:24 Cleaning registries for queue: home-abhishek-dairy_management:short
+11:11:24 Cleaning registries for queue: home-abhishek-dairy_management:default
+11:11:24 Cleaning registries for queue: home-abhishek-dairy_management:long
+11:38:24 Cleaning registries for queue: home-abhishek-dairy_management:short
+11:38:24 Cleaning registries for queue: home-abhishek-dairy_management:default
+11:38:24 Cleaning registries for queue: home-abhishek-dairy_management:long
+11:38:39 Warm shut down requested
+11:38:39 Unsubscribing from channel rq:pubsub:3cd7b6d8da4246b9bab353ecd710d426
+11:40:08 Worker rq:worker:44d30de6f14e4322bc1d5c201ed91960: started, version 1.11.1
+11:40:08 Subscribing to channel rq:pubsub:44d30de6f14e4322bc1d5c201ed91960
+11:40:08 *** Listening on home-abhishek-dairy_management:short, home-abhishek-dairy_management:default, home-abhishek-dairy_management:long...
+11:40:08 Cleaning registries for queue: home-abhishek-dairy_management:short
+11:40:08 Cleaning registries for queue: home-abhishek-dairy_management:default
+11:40:08 Cleaning registries for queue: home-abhishek-dairy_management:long
+11:56:29 Warm shut down requested
+11:56:29 Unsubscribing from channel rq:pubsub:44d30de6f14e4322bc1d5c201ed91960
+11:59:22 Worker rq:worker:30d21b63af664d51b5f45f464f034ab6: started, version 1.11.1
+11:59:22 Subscribing to channel rq:pubsub:30d21b63af664d51b5f45f464f034ab6
+11:59:22 *** Listening on home-abhishek-dairy_management:short, home-abhishek-dairy_management:default, home-abhishek-dairy_management:long...
+11:59:22 Cleaning registries for queue: home-abhishek-dairy_management:short
+11:59:22 Cleaning registries for queue: home-abhishek-dairy_management:default
+11:59:22 Cleaning registries for queue: home-abhishek-dairy_management:long
+12:26:22 Cleaning registries for queue: home-abhishek-dairy_management:short
+12:26:22 Cleaning registries for queue: home-abhishek-dairy_management:default
+12:26:22 Cleaning registries for queue: home-abhishek-dairy_management:long
+12:30:16 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Deduction Master', 'name': '2023-01-31-supplier_name-flag-0048..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (a699b667-3d0e-455b-91b2-21691e2ebc4e)
+12:30:16 home-abhishek-dairy_management:default: Job OK (a699b667-3d0e-455b-91b2-21691e2ebc4e)
+12:30:16 Result is kept for 600 seconds
+12:30:16 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Deduction Master', 'name': '2023-01-31-Rahul Patil-0046'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (0e951b32-56a7-4ec6-8365-39fd5a08f86b)
+12:30:17 home-abhishek-dairy_management:default: Job OK (0e951b32-56a7-4ec6-8365-39fd5a08f86b)
+12:30:17 Result is kept for 600 seconds
+12:30:17 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Deduction Master', 'name': '2023-01-31-Rahul Patil-0045'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (7de0427f-356b-431a-914d-097595c5da1d)
+12:30:17 home-abhishek-dairy_management:default: Job OK (7de0427f-356b-431a-914d-097595c5da1d)
+12:30:17 Result is kept for 600 seconds
+12:30:17 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Deduction Master', 'name': '2023-01-31-Abhishek Holkar-0047'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (8b0849c7-17a2-4b5c-9bfd-5c87cc73ff1b)
+12:30:17 home-abhishek-dairy_management:default: Job OK (8b0849c7-17a2-4b5c-9bfd-5c87cc73ff1b)
+12:30:17 Result is kept for 600 seconds
+12:30:17 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Deduction Master', 'name': '2023-01-28-Abhishek Shinde-0044'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (a7bf1f90-64b1-4c13-8aaf-41e03ce01bb8)
+12:30:17 home-abhishek-dairy_management:default: Job OK (a7bf1f90-64b1-4c13-8aaf-41e03ce01bb8)
+12:30:17 Result is kept for 600 seconds
+12:30:43 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-ettdfghcb'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (e46fcea9-adc7-4391-8c2b-2c0dabcd5780)
+12:30:43 home-abhishek-dairy_management:default: Job OK (e46fcea9-adc7-4391-8c2b-2c0dabcd5780)
+12:30:43 Result is kept for 600 seconds
+12:30:43 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Rahul Patil'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (19f865f4-42f9-448a-aafe-a1e1f87091f7)
+12:30:43 home-abhishek-dairy_management:default: Job OK (19f865f4-42f9-448a-aafe-a1e1f87091f7)
+12:30:43 Result is kept for 600 seconds
+12:30:43 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Avanti Pawar-Dedu..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (0272e7b6-18ca-41d6-aec4-f6918e3446b5)
+12:30:43 home-abhishek-dairy_management:default: Job OK (0272e7b6-18ca-41d6-aec4-f6918e3446b5)
+12:30:43 Result is kept for 600 seconds
+12:30:43 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Abhishek Holkar'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (d63e58ea-678c-4389-9a1b-4edec7763eeb)
+12:30:43 home-abhishek-dairy_management:default: Job OK (d63e58ea-678c-4389-9a1b-4edec7763eeb)
+12:30:43 Result is kept for 600 seconds
+12:30:43 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-28-pradip  Sir'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (a69bb531-d913-436f-98d2-a38471e0c735)
+12:30:44 home-abhishek-dairy_management:default: Job OK (a69bb531-d913-436f-98d2-a38471e0c735)
+12:30:44 Result is kept for 600 seconds
+12:30:44 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-28-Sneha Madam'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (9d358ac8-4bb9-439f-8af7-5ec16891162a)
+12:30:44 home-abhishek-dairy_management:default: Job OK (9d358ac8-4bb9-439f-8af7-5ec16891162a)
+12:30:44 Result is kept for 600 seconds
+12:30:44 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-28-Pradip Sir'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (9bb8afc1-8595-4db5-adb8-ff706fdb964d)
+12:30:44 home-abhishek-dairy_management:default: Job OK (9bb8afc1-8595-4db5-adb8-ff706fdb964d)
+12:30:44 Result is kept for 600 seconds
+12:34:36 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Rahul Patil-Bill ..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (ff4d9515-a1ff-41c6-83db-eae948c3536b)
+12:34:36 home-abhishek-dairy_management:default: Job OK (ff4d9515-a1ff-41c6-83db-eae948c3536b)
+12:34:36 Result is kept for 600 seconds
+12:34:36 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Rahul Patil-Bill ..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (5597a9fb-1135-43f9-860e-6b7ef977373a)
+12:34:36 home-abhishek-dairy_management:default: Job OK (5597a9fb-1135-43f9-860e-6b7ef977373a)
+12:34:36 Result is kept for 600 seconds
+12:34:36 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Rahul Patil-Bill ..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (9df2f7f9-f09a-4c41-bf40-df25310471a3)
+12:34:36 home-abhishek-dairy_management:default: Job OK (9df2f7f9-f09a-4c41-bf40-df25310471a3)
+12:34:36 Result is kept for 600 seconds
+12:34:36 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Avanti Pawar-Bill..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (2c30e69f-6c13-4e21-ab08-c63af373254f)
+12:34:36 home-abhishek-dairy_management:default: Job OK (2c30e69f-6c13-4e21-ab08-c63af373254f)
+12:34:36 Result is kept for 600 seconds
+12:34:36 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Avanti Pawar-Bill..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (63dfe027-6273-47f9-82f1-deb2df280bbc)
+12:34:36 home-abhishek-dairy_management:default: Job OK (63dfe027-6273-47f9-82f1-deb2df280bbc)
+12:34:36 Result is kept for 600 seconds
+12:34:36 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Avanti Pawar-Bill..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (88d4ff61-e099-42d7-ba84-3bbb0da5c23e)
+12:34:36 home-abhishek-dairy_management:default: Job OK (88d4ff61-e099-42d7-ba84-3bbb0da5c23e)
+12:34:36 Result is kept for 600 seconds
+12:34:36 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Aditya Shirulkar-..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (86428dbf-3dda-4b5c-929f-a3eb99b95411)
+12:34:37 home-abhishek-dairy_management:default: Job OK (86428dbf-3dda-4b5c-929f-a3eb99b95411)
+12:34:37 Result is kept for 600 seconds
+12:34:37 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Abhishek Holkar-B..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (36aa78fe-84b7-411c-b932-3aaa2bde2ce9)
+12:34:37 home-abhishek-dairy_management:default: Job OK (36aa78fe-84b7-411c-b932-3aaa2bde2ce9)
+12:34:37 Result is kept for 600 seconds
+12:34:37 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Abhishek Holkar-B..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (3996df96-0361-4af5-aa76-8f13ce6595cd)
+12:34:37 home-abhishek-dairy_management:default: Job OK (3996df96-0361-4af5-aa76-8f13ce6595cd)
+12:34:37 Result is kept for 600 seconds
+12:34:37 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Total Deduction Amount', 'name': '2023-01-31-Abhishek Holkar-B..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (102743d1-a5e9-485c-9d68-734babbe896e)
+12:34:37 home-abhishek-dairy_management:default: Job OK (102743d1-a5e9-485c-9d68-734babbe896e)
+12:34:37 Result is kept for 600 seconds
+12:34:49 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Deduction Master', 'name': '2023-01-31-Aditya Shirulkar'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (ca29e145-9fed-4dbe-ab71-9f83cf0b7665)
+12:34:49 home-abhishek-dairy_management:default: Job OK (ca29e145-9fed-4dbe-ab71-9f83cf0b7665)
+12:34:49 Result is kept for 600 seconds
+12:41:34 Cleaning registries for queue: home-abhishek-dairy_management:short
+12:41:34 Cleaning registries for queue: home-abhishek-dairy_management:default
+12:41:34 Cleaning registries for queue: home-abhishek-dairy_management:long
+13:04:14 Warm shut down requested
+13:52:53 Worker rq:worker:6e0a565484e24aa2b44b8dd88b63d12c: started, version 1.11.1
+13:52:53 Subscribing to channel rq:pubsub:6e0a565484e24aa2b44b8dd88b63d12c
+13:52:53 *** Listening on home-abhishek-dairy_management:short, home-abhishek-dairy_management:default, home-abhishek-dairy_management:long...
+13:52:53 Cleaning registries for queue: home-abhishek-dairy_management:short
+13:52:53 Cleaning registries for queue: home-abhishek-dairy_management:default
+13:52:53 Cleaning registries for queue: home-abhishek-dairy_management:long
+14:19:53 Cleaning registries for queue: home-abhishek-dairy_management:short
+14:19:53 Cleaning registries for queue: home-abhishek-dairy_management:default
+14:19:53 Cleaning registries for queue: home-abhishek-dairy_management:long
+14:46:53 Cleaning registries for queue: home-abhishek-dairy_management:short
+14:46:53 Cleaning registries for queue: home-abhishek-dairy_management:default
+14:46:53 Cleaning registries for queue: home-abhishek-dairy_management:long
+14:49:25 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.desk.reportview.delete_bulk', kwargs={'doctype': 'Data Collection', 'items': ['2023-01-30-Evening-Rahul Patil-Bu..., method='frappe.desk.reportview.delete_bulk', site='dairy_management.com', user='Administrator') (178a6c21-d7f0-409f-bfa0-0ef4813579fd)
+14:49:27 home-abhishek-dairy_management:default: Job OK (178a6c21-d7f0-409f-bfa0-0ef4813579fd)
+14:49:27 Result is kept for 600 seconds
+14:49:27 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-30-Evening-Rahul Patil-Buff..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (40c63ba8-3098-454d-906b-6eccb1ac628c)
+14:49:28 home-abhishek-dairy_management:default: Job OK (40c63ba8-3098-454d-906b-6eccb1ac628c)
+14:49:28 Result is kept for 600 seconds
+14:49:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-26-Evening-Avanti Pawar-Cow..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (c130d249-c4a6-496a-a76a-eb63b3538dea)
+14:49:28 home-abhishek-dairy_management:default: Job OK (c130d249-c4a6-496a-a76a-eb63b3538dea)
+14:49:28 Result is kept for 600 seconds
+14:49:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-25-Evening-Avanti Pawar-Cow..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (b4e129b9-b83a-483d-aff8-0d6b18f18c91)
+14:49:28 home-abhishek-dairy_management:default: Job OK (b4e129b9-b83a-483d-aff8-0d6b18f18c91)
+14:49:28 Result is kept for 600 seconds
+14:49:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-25-Evening-Abhishek Holkar-..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (b273ae96-54a0-4826-ad07-6c49f0ead9a1)
+14:49:28 home-abhishek-dairy_management:default: Job OK (b273ae96-54a0-4826-ad07-6c49f0ead9a1)
+14:49:28 Result is kept for 600 seconds
+14:49:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-24-Evening-Rahul Patil-Buff..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (47d6fd69-ea4e-46ff-9b83-10c3dd4fcb9b)
+14:49:28 home-abhishek-dairy_management:default: Job OK (47d6fd69-ea4e-46ff-9b83-10c3dd4fcb9b)
+14:49:28 Result is kept for 600 seconds
+14:49:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-24-Evening-Avanti Pawar-Cow..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (410c4fa5-a69b-42ff-9b16-4db1b5d90c08)
+14:49:28 home-abhishek-dairy_management:default: Job OK (410c4fa5-a69b-42ff-9b16-4db1b5d90c08)
+14:49:28 Result is kept for 600 seconds
+14:49:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-24-Evening-Abhishek Holkar-..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (e5630bab-83b3-43b4-ad9f-0f0b5c438efa)
+14:49:28 home-abhishek-dairy_management:default: Job OK (e5630bab-83b3-43b4-ad9f-0f0b5c438efa)
+14:49:28 Result is kept for 600 seconds
+14:49:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-23-Evening-Rahul Patil-Buff..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (78f1c7a4-ed18-4335-8bc7-898ceb41dece)
+14:49:29 home-abhishek-dairy_management:default: Job OK (78f1c7a4-ed18-4335-8bc7-898ceb41dece)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-23-Evening-Avanti Pawar-Cow..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (fda9afee-f55b-4678-9b98-5885bfa1426c)
+14:49:29 home-abhishek-dairy_management:default: Job OK (fda9afee-f55b-4678-9b98-5885bfa1426c)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-23-Evening-Abhishek Holkar-..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (3091033e-3d35-41b2-8776-6c2492ad4b6d)
+14:49:29 home-abhishek-dairy_management:default: Job OK (3091033e-3d35-41b2-8776-6c2492ad4b6d)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-22-Evening-Rahul Patil-Buff..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (2eaf9442-70e3-4dc9-9fd5-0da511546809)
+14:49:29 home-abhishek-dairy_management:default: Job OK (2eaf9442-70e3-4dc9-9fd5-0da511546809)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-22-Evening-Avanti Pawar-Cow..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (ed74d144-ad9a-4942-a1b1-7fdeeaefbd16)
+14:49:29 home-abhishek-dairy_management:default: Job OK (ed74d144-ad9a-4942-a1b1-7fdeeaefbd16)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-22-Evening-Abhishek Holkar-..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (0e8030cd-7d76-47df-841a-4871a72e5814)
+14:49:29 home-abhishek-dairy_management:default: Job OK (0e8030cd-7d76-47df-841a-4871a72e5814)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-21-Evening-Sneha Patil-Buff..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (39a89add-0dad-4987-94cd-172b24d4043c)
+14:49:29 home-abhishek-dairy_management:default: Job OK (39a89add-0dad-4987-94cd-172b24d4043c)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-21-Evening-Avanti Pawar-Cow..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (ca8a7b8b-99fd-4092-af98-3afeb057466e)
+14:49:29 home-abhishek-dairy_management:default: Job OK (ca8a7b8b-99fd-4092-af98-3afeb057466e)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-20-Evening-Sneha Patil-Buff..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (0b2f5d31-3512-4422-b2cf-d0d5cbfab69a)
+14:49:29 home-abhishek-dairy_management:default: Job OK (0b2f5d31-3512-4422-b2cf-d0d5cbfab69a)
+14:49:29 Result is kept for 600 seconds
+14:49:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-18-Evening-Prajwal Shinde'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (df8fc166-577f-465b-8a5c-e9de8dd85013)
+14:49:30 home-abhishek-dairy_management:default: Job OK (df8fc166-577f-465b-8a5c-e9de8dd85013)
+14:49:30 Result is kept for 600 seconds
+14:49:30 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-18-Evening-Avi Shinde'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (3571d08c-44d1-4dfc-b110-d9caf801e8e9)
+14:49:30 home-abhishek-dairy_management:default: Job OK (3571d08c-44d1-4dfc-b110-d9caf801e8e9)
+14:49:30 Result is kept for 600 seconds
+14:49:30 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-15-Evening-Rahul Patil-Buff..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (4461b31f-acfa-467f-ae46-fac36a69eabd)
+14:49:30 home-abhishek-dairy_management:default: Job OK (4461b31f-acfa-467f-ae46-fac36a69eabd)
+14:49:30 Result is kept for 600 seconds
+14:49:30 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-15-Evening-Abhishek Holkar-..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (b6fab324-8575-4a42-be66-00d203722794)
+14:49:30 home-abhishek-dairy_management:default: Job OK (b6fab324-8575-4a42-be66-00d203722794)
+14:49:30 Result is kept for 600 seconds
+14:52:47 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-18-Evening-vivek Kumbhar'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (ba6a9e36-ff95-40ab-9436-b5869b36ac6d)
+14:52:47 home-abhishek-dairy_management:default: Job OK (ba6a9e36-ff95-40ab-9436-b5869b36ac6d)
+14:52:47 Result is kept for 600 seconds
+14:52:47 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-18-Evening-Soham Pawar'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (676b2199-bf52-4fd1-be74-f203aa20b9a7)
+14:52:47 home-abhishek-dairy_management:default: Job OK (676b2199-bf52-4fd1-be74-f203aa20b9a7)
+14:52:47 Result is kept for 600 seconds
+14:52:47 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-17-Evening-vivek Kumbhar'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (377ee994-cb86-4ada-8592-0d9110b8948d)
+14:52:48 home-abhishek-dairy_management:default: Job OK (377ee994-cb86-4ada-8592-0d9110b8948d)
+14:52:48 Result is kept for 600 seconds
+14:52:48 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Data Collection', 'name': '2023-01-16-Afternoon-vivek Kumbhar'..., method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (b0d1d846-fd3f-4351-8523-aab335c8d5db)
+14:52:48 home-abhishek-dairy_management:default: Job OK (b0d1d846-fd3f-4351-8523-aab335c8d5db)
+14:52:48 Result is kept for 600 seconds
+15:13:03 Cleaning registries for queue: home-abhishek-dairy_management:short
+15:13:03 Cleaning registries for queue: home-abhishek-dairy_management:default
+15:13:03 Cleaning registries for queue: home-abhishek-dairy_management:long
+15:40:03 Cleaning registries for queue: home-abhishek-dairy_management:short
+15:40:03 Cleaning registries for queue: home-abhishek-dairy_management:default
+15:40:03 Cleaning registries for queue: home-abhishek-dairy_management:long
+16:07:03 Cleaning registries for queue: home-abhishek-dairy_management:short
+16:07:03 Cleaning registries for queue: home-abhishek-dairy_management:default
+16:07:03 Cleaning registries for queue: home-abhishek-dairy_management:long
+16:34:04 Cleaning registries for queue: home-abhishek-dairy_management:short
+16:34:04 Cleaning registries for queue: home-abhishek-dairy_management:default
+16:34:04 Cleaning registries for queue: home-abhishek-dairy_management:long
+17:01:04 Cleaning registries for queue: home-abhishek-dairy_management:short
+17:01:04 Cleaning registries for queue: home-abhishek-dairy_management:default
+17:01:04 Cleaning registries for queue: home-abhishek-dairy_management:long
+17:28:04 Cleaning registries for queue: home-abhishek-dairy_management:short
+17:28:04 Cleaning registries for queue: home-abhishek-dairy_management:default
+17:28:04 Cleaning registries for queue: home-abhishek-dairy_management:long
+17:37:10 Warm shut down requested
+17:37:10 Unsubscribing from channel rq:pubsub:6e0a565484e24aa2b44b8dd88b63d12c
+10:14:03 Worker rq:worker:949f54c0431141d1838653fd090dbc86: started, version 1.11.1
+10:14:03 Subscribing to channel rq:pubsub:949f54c0431141d1838653fd090dbc86
+10:14:03 *** Listening on home-abhishek-dairy_management:short, home-abhishek-dairy_management:default, home-abhishek-dairy_management:long...
+10:14:03 Cleaning registries for queue: home-abhishek-dairy_management:short
+10:14:03 Cleaning registries for queue: home-abhishek-dairy_management:default
+10:14:03 Cleaning registries for queue: home-abhishek-dairy_management:long
+10:18:34 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Deduction Process', 'name': 'date-Deduction-0062'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (3eafb51e-6dfe-4672-a35c-4fdfbea7f388)
+10:18:34 home-abhishek-dairy_management:default: Job OK (3eafb51e-6dfe-4672-a35c-4fdfbea7f388)
+10:18:34 Result is kept for 600 seconds
+10:20:26 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.desk.reportview.delete_bulk', kwargs={'doctype': 'Bill Process', 'items': ['2023-01-31-Saidapur-0013-0052', '202..., method='frappe.desk.reportview.delete_bulk', site='dairy_management.com', user='Administrator') (dff19944-3f4e-40cc-a487-2f1de1c7b078)
+10:20:28 home-abhishek-dairy_management:default: Job OK (dff19944-3f4e-40cc-a487-2f1de1c7b078)
+10:20:28 Result is kept for 600 seconds
+10:20:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-31-Saidapur-0013-0052'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (98e6fd3e-fb82-4dd0-9689-e8597d0d5c32)
+10:20:28 home-abhishek-dairy_management:default: Job OK (98e6fd3e-fb82-4dd0-9689-e8597d0d5c32)
+10:20:28 Result is kept for 600 seconds
+10:20:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0042'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (eb3b9075-cef8-4123-80fd-b01e0ffb56a6)
+10:20:28 home-abhishek-dairy_management:default: Job OK (eb3b9075-cef8-4123-80fd-b01e0ffb56a6)
+10:20:28 Result is kept for 600 seconds
+10:20:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0041'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (a98b6b2d-c05e-4fc8-835e-268053142725)
+10:20:28 home-abhishek-dairy_management:default: Job OK (a98b6b2d-c05e-4fc8-835e-268053142725)
+10:20:28 Result is kept for 600 seconds
+10:20:28 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0040'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (2869461b-8cc5-4c30-8810-ba33187ad7d3)
+10:20:29 home-abhishek-dairy_management:default: Job OK (2869461b-8cc5-4c30-8810-ba33187ad7d3)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0039'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (0f322491-eaab-44f8-ae51-e0856d4a3ac8)
+10:20:29 home-abhishek-dairy_management:default: Job OK (0f322491-eaab-44f8-ae51-e0856d4a3ac8)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0038'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (40d34330-a560-42cf-91e1-bf2d7c1ce95e)
+10:20:29 home-abhishek-dairy_management:default: Job OK (40d34330-a560-42cf-91e1-bf2d7c1ce95e)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0037'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (dea12322-de65-4af8-858b-eeaf884dafde)
+10:20:29 home-abhishek-dairy_management:default: Job OK (dea12322-de65-4af8-858b-eeaf884dafde)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0036'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (28e24ed8-0874-4485-a529-506d2e8b2c7e)
+10:20:29 home-abhishek-dairy_management:default: Job OK (28e24ed8-0874-4485-a529-506d2e8b2c7e)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0035'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (eeaa8c1c-e60b-4808-9ec5-052909654993)
+10:20:29 home-abhishek-dairy_management:default: Job OK (eeaa8c1c-e60b-4808-9ec5-052909654993)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0034'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (ee41d805-7ce4-46cd-beba-e3d4f1e59bae)
+10:20:29 home-abhishek-dairy_management:default: Job OK (ee41d805-7ce4-46cd-beba-e3d4f1e59bae)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0033'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (4dd5e052-f0df-477b-8624-35c280773c4e)
+10:20:29 home-abhishek-dairy_management:default: Job OK (4dd5e052-f0df-477b-8624-35c280773c4e)
+10:20:29 Result is kept for 600 seconds
+10:20:29 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0032'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (e8c457b4-9ade-44e8-bd45-b682baf91873)
+10:20:30 home-abhishek-dairy_management:default: Job OK (e8c457b4-9ade-44e8-bd45-b682baf91873)
+10:20:30 Result is kept for 600 seconds
+10:20:30 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0031'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (0341eef8-5eb4-4c2c-880f-c65015effa58)
+10:20:30 home-abhishek-dairy_management:default: Job OK (0341eef8-5eb4-4c2c-880f-c65015effa58)
+10:20:30 Result is kept for 600 seconds
+10:20:30 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0030'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (b3f0337b-95be-48a7-b9e7-9b6c02028107)
+10:20:30 home-abhishek-dairy_management:default: Job OK (b3f0337b-95be-48a7-b9e7-9b6c02028107)
+10:20:30 Result is kept for 600 seconds
+10:20:30 home-abhishek-dairy_management:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Bill Process', 'name': '2023-01-27-Saidapur-0013-0029'}, method='frappe.model.delete_doc.delete_dynamic_links', site='dairy_management.com', user='Administrator') (784b6ae0-48fa-410e-ba9a-4b34ff9027a4)
+10:20:30 home-abhishek-dairy_management:default: Job OK (784b6ae0-48fa-410e-ba9a-4b34ff9027a4)
+10:20:30 Result is kept for 600 seconds
+10:40:45 Cleaning registries for queue: home-abhishek-dairy_management:short
+10:40:45 Cleaning registries for queue: home-abhishek-dairy_management:default
+10:40:45 Cleaning registries for queue: home-abhishek-dairy_management:long
+11:07:45 Cleaning registries for queue: home-abhishek-dairy_management:short
+11:07:45 Cleaning registries for queue: home-abhishek-dairy_management:default
+11:07:45 Cleaning registries for queue: home-abhishek-dairy_management:long
+11:34:45 Cleaning registries for queue: home-abhishek-dairy_management:short
+11:34:45 Cleaning registries for queue: home-abhishek-dairy_management:default
+11:34:45 Cleaning registries for queue: home-abhishek-dairy_management:long
+11:59:51 Warm shut down requested
+11:59:51 Unsubscribing from channel rq:pubsub:949f54c0431141d1838653fd090dbc86
+16:31:27 Worker rq:worker:a589fd50423d41c2a4ae3dac8111299c: started, version 1.11.1
+16:31:27 Subscribing to channel rq:pubsub:a589fd50423d41c2a4ae3dac8111299c
+16:31:27 *** Listening on home-abhishek-dairy_management:short, home-abhishek-dairy_management:default, home-abhishek-dairy_management:long...
+16:31:27 Cleaning registries for queue: home-abhishek-dairy_management:short
+16:31:27 Cleaning registries for queue: home-abhishek-dairy_management:default
+16:31:27 Cleaning registries for queue: home-abhishek-dairy_management:long
+16:58:27 Cleaning registries for queue: home-abhishek-dairy_management:short
+16:58:28 Cleaning registries for queue: home-abhishek-dairy_management:default
+16:58:28 Cleaning registries for queue: home-abhishek-dairy_management:long

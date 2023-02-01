@@ -1,0 +1,12 @@
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _76370591555c3706 -p********** _76370591555c3706 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./dairy_management.com/private/backups/20230131_120002-dairy_management_com-database.sql.gz
+
+Backup Summary for dairy_management.com at 2023-01-31 12:00:05.815443
+Config  : ./dairy_management.com/private/backups/20230131_120002-dairy_management_com-site_config_backup.json 116.0B
+Database: ./dairy_management.com/private/backups/20230131_120002-dairy_management_com-database.sql.gz         1.3MiB
+Backup for Site dairy_management.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _76370591555c3706 -p********** _76370591555c3706 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./dairy_management.com/private/backups/20230201_120003-dairy_management_com-database.sql.gz
+
+Backup Summary for dairy_management.com at 2023-02-01 12:00:10.694267
+Config  : ./dairy_management.com/private/backups/20230201_120003-dairy_management_com-site_config_backup.json 116.0B
+Database: ./dairy_management.com/private/backups/20230201_120003-dairy_management_com-database.sql.gz         1.4MiB
+Backup for Site dairy_management.com has been successfully completed

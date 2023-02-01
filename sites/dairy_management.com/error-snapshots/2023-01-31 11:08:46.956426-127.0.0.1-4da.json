@@ -1,0 +1,382 @@
+{
+ "etype": "ModuleNotFoundError",
+ "evalue": "ModuleNotFoundError(\"No module named 'dairy_management'\")",
+ "exception": {
+  "args": [
+   40,
+   34,
+   78,
+   111,
+   32,
+   109,
+   111,
+   100,
+   117,
+   108,
+   101,
+   32,
+   110,
+   97,
+   109,
+   101,
+   100,
+   32,
+   39,
+   100,
+   97,
+   105,
+   114,
+   121,
+   95,
+   109,
+   97,
+   110,
+   97,
+   103,
+   101,
+   109,
+   101,
+   110,
+   116,
+   39,
+   34,
+   44,
+   41
+  ],
+  "msg": [
+   34,
+   78,
+   111,
+   32,
+   109,
+   111,
+   100,
+   117,
+   108,
+   101,
+   32,
+   110,
+   97,
+   109,
+   101,
+   100,
+   32,
+   39,
+   100,
+   97,
+   105,
+   114,
+   121,
+   95,
+   109,
+   97,
+   110,
+   97,
+   103,
+   101,
+   109,
+   101,
+   110,
+   116,
+   39,
+   34
+  ],
+  "name": [
+   39,
+   100,
+   97,
+   105,
+   114,
+   121,
+   95,
+   109,
+   97,
+   110,
+   97,
+   103,
+   101,
+   109,
+   101,
+   110,
+   116,
+   39
+  ],
+  "path": [
+   78,
+   111,
+   110,
+   101
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   77,
+   111,
+   100,
+   117,
+   108,
+   101,
+   78,
+   111,
+   116,
+   70,
+   111,
+   117,
+   110,
+   100,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://127.0.0.1:8003/' [GET]>)",
+   "dump": {
+    "global get_response": "<function get_response>",
+    "response": "None"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "76": "",
+    "77": "\t\telif request.method in (\"GET\", \"HEAD\", \"POST\"):",
+    "78": "\t\t\tresponse = get_response()",
+    "79": "",
+    "80": "\t\telse:"
+   },
+   "lnum": 78
+  },
+  {
+   "call": "(path='/', http_status_code=200)",
+   "dump": {
+    "e": "undefined",
+    "exception": "undefined",
+    "global ErrorPage": "<class 'frappe.website.page_renderers.error_page.ErrorPage'>",
+    "response": "None"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/website/serve.py",
+   "func": "get_response",
+   "lines": {
+    "25": "\texcept Exception as e:",
+    "26": "\t\tfrappe.log_error(f\"{path} failed\")",
+    "27": "\t\tresponse = ErrorPage(exception=e).render()",
+    "28": "",
+    "29": "\treturn response"
+   },
+   "lnum": 27
+  },
+  {
+   "call": "(self=<frappe.website.page_renderers.error_page.ErrorPage object>, path='error', http_status_code=None, exception=ModuleNotFoundError(\"No module named 'dairy_management'\"))",
+   "dump": {
+    "). __init__": "<slot wrapper '__init__' of 'super' objects>",
+    "builtin super": "<class 'super'>",
+    "http_status_code": "None",
+    "path": "'error'"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/error_page.py",
+   "func": "__init__",
+   "lines": {
+    "5": "\tdef __init__(self, path=None, http_status_code=None, exception=None):",
+    "6": "\t\tpath = \"error\"",
+    "7": "\t\tsuper().__init__(path=path, http_status_code=http_status_code)",
+    "8": "\t\tself.exception = exception",
+    "9": ""
+   },
+   "lnum": 7
+  },
+  {
+   "call": "(self=<frappe.website.page_renderers.error_page.ErrorPage object>, path='error', http_status_code=None)",
+   "dump": {
+    "self": "<frappe.website.page_renderers.error_page.ErrorPage object>",
+    "self. set_template_path": "<bound method TemplatePage.set_template_path of ...site.page_renderers.error_page.ErrorPage object>>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/template_page.py",
+   "func": "__init__",
+   "lines": {
+    "41": "\tdef __init__(self, path, http_status_code=None):",
+    "42": "\t\tsuper().__init__(path=path, http_status_code=http_status_code)",
+    "43": "\t\tself.set_template_path()",
+    "44": "",
+    "45": "\tdef set_template_path(self):"
+   },
+   "lnum": 43
+  },
+  {
+   "call": "(self=<frappe.website.page_renderers.error_page.ErrorPage object>)",
+   "dump": {
+    "app": "'dairy_management'",
+    "app_path": "'/home/abhishek/dairy_management/apps/erpnext/erpnext'",
+    "frappe. get_app_path": "<function get_app_path>",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/template_page.py",
+   "func": "set_template_path",
+   "lines": {
+    "50": "\t\tfolders = get_start_folders()",
+    "51": "\t\tfor app in frappe.get_installed_apps(frappe_last=True):",
+    "52": "\t\t\tapp_path = frappe.get_app_path(app)",
+    "53": "",
+    "54": "\t\t\tfor dirname in folders:"
+   },
+   "lnum": 52
+  },
+  {
+   "call": "(app_name='dairy_management', *joins=())",
+   "dump": {
+    "app_name": "'dairy_management'",
+    "global get_pymodule_path": "<function get_pymodule_path>",
+    "joins": "()"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py",
+   "func": "get_app_path",
+   "lines": {
+    "1354": "\t:param app: App name.",
+    "1355": "\t:param *joins: Join additional path elements using `os.path.join`.\"\"\"",
+    "1356": "\treturn get_pymodule_path(app_name, *joins)",
+    "1357": "",
+    "1358": ""
+   },
+   "lnum": 1356
+  },
+  {
+   "call": "(modulename='dairy_management', *joins=[])",
+   "dump": {
+    ").__file__": "undefined",
+    "global get_module": "<function get_module>",
+    "global os": "<module 'os' from '/usr/lib/python3.10/os.py'>",
+    "global scrub": "<function scrub>",
+    "joins": "[]",
+    "modulename": "'dairy_management'",
+    "os. path": "<module 'posixpath' from '/usr/lib/python3.10/posixpath.py'>",
+    "os.path. dirname": "<function dirname>",
+    "os.path. join": "<function join>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py",
+   "func": "get_pymodule_path",
+   "lines": {
+    "1371": "\tif not \"public\" in joins:",
+    "1372": "\t\tjoins = [scrub(part) for part in joins]",
+    "1373": "\treturn os.path.join(os.path.dirname(get_module(scrub(modulename)).__file__ or \"\"), *joins)",
+    "1374": "",
+    "1375": ""
+   },
+   "lnum": 1373
+  },
+  {
+   "call": "(modulename='dairy_management')",
+   "dump": {
+    "global importlib": "<module 'importlib' from '/usr/lib/python3.10/importlib/__init__.py'>",
+    "importlib. import_module": "<function import_module>",
+    "modulename": "'dairy_management'"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py",
+   "func": "get_module",
+   "lines": {
+    "1325": "def get_module(modulename):",
+    "1326": "\t\"\"\"Returns a module object for given Python module name using `importlib.import_module`.\"\"\"",
+    "1327": "\treturn importlib.import_module(modulename)",
+    "1328": "",
+    "1329": ""
+   },
+   "lnum": 1327
+  },
+  {
+   "call": "(name='dairy_management', package=None)",
+   "dump": {
+    "_bootstrap. _gcd_import": "<function _gcd_import>",
+    "global _bootstrap": "<module '_frozen_importlib' (frozen)>",
+    "level": "0",
+    "name": "'dairy_management'",
+    "package": "None"
+   },
+   "file": "/usr/lib/python3.10/importlib/__init__.py",
+   "func": "import_module",
+   "lines": {
+    "124": "                break",
+    "125": "            level += 1",
+    "126": "    return _bootstrap._gcd_import(name[level:], package, level)",
+    "127": "",
+    "128": ""
+   },
+   "lnum": 126
+  },
+  {
+   "call": "(name='dairy_management', package=None, level=0)",
+   "dump": {},
+   "file": "/home/abhishek/dairy_management/sites/<frozen importlib._bootstrap>",
+   "func": "_gcd_import",
+   "lines": {},
+   "lnum": 1050
+  },
+  {
+   "call": "(name='dairy_management', import_=<function _gcd_import>)",
+   "dump": {},
+   "file": "/home/abhishek/dairy_management/sites/<frozen importlib._bootstrap>",
+   "func": "_find_and_load",
+   "lines": {},
+   "lnum": 1027
+  },
+  {
+   "call": "(name='dairy_management', import_=<function _gcd_import>)",
+   "dump": {},
+   "file": "/home/abhishek/dairy_management/sites/<frozen importlib._bootstrap>",
+   "func": "_find_and_load_unlocked",
+   "lines": {},
+   "lnum": 1004
+  }
+ ],
+ "locals": {
+  "import_": "<function _gcd_import>",
+  "name": "dairy_management",
+  "parent": "",
+  "path": "None",
+  "spec": "None"
+ },
+ "pyver": "Python 3.10.6: /home/abhishek/dairy_management/env/bin/python (prefix: /home/abhishek/dairy_management/env)",
+ "timestamp": "2023-01-31 11:08:46.956486",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/serve.py\", line 17, in get_response\n    endpoint, renderer_instance = path_resolver.resolve()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/path_resolver.py\", line 58, in resolve\n    renderer_instance = renderer(endpoint, 200)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/static_page.py\", line 19, in __init__\n    self.set_file_path()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/static_page.py\", line 26, in set_file_path\n    file_path = frappe.get_app_path(app, \"www\") + \"/\" + self.path\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1356, in get_app_path\n    return get_pymodule_path(app_name, *joins)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1373, in get_pymodule_path\n    return os.path.join(os.path.dirname(get_module(scrub(modulename)).__file__ or \"\"), *joins)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1327, in get_module\n    return importlib.import_module(modulename)\n  File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'dairy_management'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/app.py\", line 78, in application\n    response = get_response()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/serve.py\", line 27, in get_response\n    response = ErrorPage(exception=e).render()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/error_page.py\", line 7, in __init__\n    super().__init__(path=path, http_status_code=http_status_code)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/template_page.py\", line 43, in __init__\n    self.set_template_path()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/website/page_renderers/template_page.py\", line 52, in set_template_path\n    app_path = frappe.get_app_path(app)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1356, in get_app_path\n    return get_pymodule_path(app_name, *joins)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1373, in get_pymodule_path\n    return os.path.join(os.path.dirname(get_module(scrub(modulename)).__file__ or \"\"), *joins)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1327, in get_module\n    return importlib.import_module(modulename)\n  File \"/usr/lib/python3.10/importlib/__init__.py\", line 126, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1050, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1027, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1004, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'dairy_management'\n"
+}

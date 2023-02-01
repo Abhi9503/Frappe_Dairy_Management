@@ -1,0 +1,300 @@
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+Traceback (most recent call last):
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 427, in read_from_socket
+    bufflen = recv_into(self._sock, self._buffer)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/_compat.py", line 75, in recv_into
+Exception in thread     Thread-1return sock.recv_into(*args, **kwargs):
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+ConnectionResetError: [Errno 104] Connection reset by peer    
+self.run()
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    return _run_code(code, main_globals, None,
+      File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+response = self.parse_response(block=False, timeout=timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    exec(code, run_globals)
+      File "/home/abhishek/dairy_management/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+if not block and not conn.can_read(timeout=timeout):
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+        main()return self.read_from_socket(timeout=timeout,
+
+  File "/home/abhishek/dairy_management/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    click.Group(commands=commands)(prog_name="bench")
+      File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.    ConnectionErrorreturn self.main(*args, **kwargs): 
+Connection closed by server.  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+
+    rv = self.invoke(ctx)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/abhishek/dairy_management/apps/frappe/frappe/commands/scheduler.py", line 201, in start_worker
+    start_worker(
+  File "/home/abhishek/dairy_management/apps/frappe/frappe/utils/background_jobs.py", line 235, in start_worker
+    worker.work(logging_level=logging_level, burst=burst)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/rq/worker.py", line 644, in work
+    self.register_death()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/rq/worker.py", line 344, in register_death
+    p.execute()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 4019, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3894, in _execute_transaction
+    self.parse_response(connection, '_')
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3977, in parse_response
+    result = Redis.parse_response(
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 915, in parse_response
+    response = connection.read_response()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 739, in read_response
+    response = self._parser.read_response()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 470, in read_response
+    self.read_from_socket()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 452, in read_from_socket
+    raise ConnectionError("Error while reading from socket: %s" %
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+/usr/lib/python3.10/functools.py:981: UserWarning: The 'filters_config' hook used to add custom operators is not yet implemented in frappe.db.query engine. Use db_query (frappe.get_list) instead.
+  val = self.func(instance)
+Traceback (most recent call last):
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/abhishek/dairy_management/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+  File "/home/abhishek/dairy_management/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/abhishek/dairy_management/apps/frappe/frappe/commands/scheduler.py", line 201, in start_worker
+    start_worker(
+  File "/home/abhishek/dairy_management/apps/frappe/frappe/utils/background_jobs.py", line 235, in start_worker
+    worker.work(logging_level=logging_level, burst=burst)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/rq/worker.py", line 645, in work
+    self.unsubscribe()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/rq/worker.py", line 550, in unsubscribe
+    self.pubsub.unsubscribe()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3600, in unsubscribe
+    return self.execute_command('UNSUBSCRIBE', *args)
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/client.py", line 3466, in execute_command
+    self.connection = self.connection_pool.get_connection(
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11003. Connection refused.

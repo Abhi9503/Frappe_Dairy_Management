@@ -1,0 +1,103 @@
+2023-01-31 10:54:46,489 DEBUG cd dairy_management && python3 -m venv env
+2023-01-31 10:54:49,851 DEBUG cd dairy_management && /home/abhishek/dairy_management/env/bin/python -m pip install  --upgrade pip
+2023-01-31 10:54:52,764 DEBUG cd dairy_management && /home/abhishek/dairy_management/env/bin/python -m pip install  wheel
+2023-01-31 10:54:55,083 LOG Getting frappe
+2023-01-31 10:54:55,083 DEBUG cd dairy_management/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-01-31 10:55:00,905 LOG Installing frappe
+2023-01-31 10:55:00,906 DEBUG cd /home/abhishek/dairy_management && /home/abhishek/dairy_management/env/bin/python -m pip install  --upgrade -e /home/abhishek/dairy_management/apps/frappe 
+2023-01-31 10:56:13,966 DEBUG cd /home/abhishek/dairy_management/apps/frappe && yarn install
+2023-01-31 10:57:03,618 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-01-31 10:57:03,619 DEBUG cd dairy_management && bench build
+2023-01-31 10:57:03,698 INFO /usr/local/bin/bench build
+2023-01-31 10:57:19,781 LOG setting up backups
+2023-01-31 10:57:19,906 LOG backups were set up
+2023-01-31 10:57:19,906 INFO Bench dairy_management initialized
+2023-01-31 10:57:20,317 INFO A newer version of bench is available: 5.16.0 → 5.16.1
+2023-01-31 10:57:39,665 INFO /usr/local/bin/bench get-app --branch version-14 erpnext
+2023-01-31 10:57:40,122 LOG Getting erpnext
+2023-01-31 10:57:40,122 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2023-01-31 10:58:01,766 LOG Installing erpnext
+2023-01-31 10:58:01,856 DEBUG cd /home/abhishek/dairy_management && /home/abhishek/dairy_management/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/dairy_management/apps/erpnext 
+2023-01-31 10:58:30,286 DEBUG cd /home/abhishek/dairy_management/apps/erpnext && yarn install
+2023-01-31 10:58:33,770 DEBUG bench build --app erpnext
+2023-01-31 10:58:33,875 INFO /usr/local/bin/bench build --app erpnext
+2023-01-31 10:58:40,144 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-01-31 10:58:40,348 INFO A newer version of bench is available: 5.16.0 → 5.16.1
+2023-01-31 10:58:50,541 INFO /usr/local/bin/bench get-app payments
+2023-01-31 10:58:50,713 LOG Getting payments
+2023-01-31 10:58:50,713 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2023-01-31 10:58:52,188 LOG Installing payments
+2023-01-31 10:58:52,311 DEBUG cd /home/abhishek/dairy_management && /home/abhishek/dairy_management/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/dairy_management/apps/payments 
+2023-01-31 10:58:55,557 DEBUG bench build --app payments
+2023-01-31 10:58:55,649 INFO /usr/local/bin/bench build --app payments
+2023-01-31 10:59:00,378 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-01-31 10:59:00,571 INFO A newer version of bench is available: 5.16.0 → 5.16.1
+2023-01-31 10:59:04,056 INFO /usr/local/bin/bench get-app payments
+2023-01-31 10:59:08,509 INFO App moved from apps/payments to archived/apps/payments-2023-01-31
+2023-01-31 10:59:08,513 LOG Getting payments
+2023-01-31 10:59:08,513 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git --branch develop --depth 1 --origin upstream
+2023-01-31 10:59:09,650 LOG Installing payments
+2023-01-31 10:59:09,788 DEBUG cd /home/abhishek/dairy_management && /home/abhishek/dairy_management/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/dairy_management/apps/payments 
+2023-01-31 10:59:11,193 DEBUG bench build --app payments
+2023-01-31 10:59:11,279 INFO /usr/local/bin/bench build --app payments
+2023-01-31 10:59:16,040 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-01-31 10:59:16,302 INFO A newer version of bench is available: 5.16.0 → 5.16.1
+2023-01-31 10:59:33,582 INFO /usr/local/bin/bench new-site dairy_management.com
+2023-01-31 11:01:08,774 INFO /usr/local/bin/bench --site dairy_management.com install-app erpnext
+2023-01-31 11:04:23,179 INFO /usr/local/bin/bench use dairy_management
+2023-01-31 11:04:28,439 INFO /usr/local/bin/bench use dairy_management.com
+2023-01-31 11:07:10,400 INFO /usr/local/bin/bench --site dairy_management.com --force restore /home/abhishek/Downloads/20230131_105409-grizzlies_com-database.sql.gz
+2023-01-31 11:08:29,610 INFO /usr/local/bin/bench start
+2023-01-31 11:08:29,865 INFO /usr/local/bin/bench serve --port 8003
+2023-01-31 11:08:29,866 INFO /usr/local/bin/bench watch
+2023-01-31 11:08:29,884 INFO /usr/local/bin/bench worker
+2023-01-31 11:08:29,905 INFO /usr/local/bin/bench schedule
+2023-01-31 11:11:22,577 INFO /usr/local/bin/bench start
+2023-01-31 11:11:22,946 INFO /usr/local/bin/bench schedule
+2023-01-31 11:11:22,953 INFO /usr/local/bin/bench watch
+2023-01-31 11:11:22,983 INFO /usr/local/bin/bench worker
+2023-01-31 11:11:22,998 INFO /usr/local/bin/bench serve --port 8003
+2023-01-31 11:11:30,830 INFO /usr/local/bin/bench migrate
+2023-01-31 11:37:03,719 INFO /usr/local/bin/bench get-app [200~https://github.com/vivekkumbhar2710/dairy_management.git
+2023-01-31 11:37:04,742 WARNING /usr/local/bin/bench get-app [200~https://github.com/vivekkumbhar2710/dairy_management.git executed with exit code 1
+2023-01-31 11:37:05,087 INFO A newer version of bench is available: 5.16.0 → 5.16.1
+2023-01-31 11:38:06,005 INFO /usr/local/bin/bench --site dairy_management.com install-app dairy_management
+2023-01-31 11:38:51,938 INFO /usr/local/bin/bench --site dairy_management.com install-app dairy_management
+2023-01-31 11:39:31,020 INFO /usr/local/bin/bench get-app https://github.com/vivekkumbhar2710/dairy_management.git
+2023-01-31 11:39:31,026 LOG Getting dairy_management
+2023-01-31 11:39:31,026 DEBUG cd ./apps && git clone https://github.com/vivekkumbhar2710/dairy_management.git  --depth 1 --origin upstream
+2023-01-31 11:39:33,083 LOG Installing dairy_management
+2023-01-31 11:39:33,205 DEBUG cd /home/abhishek/dairy_management/apps && /home/abhishek/dairy_management/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/dairy_management/apps/dairy_management 
+2023-01-31 11:39:34,809 DEBUG bench build --app dairy_management
+2023-01-31 11:39:34,895 INFO /usr/local/bin/bench build --app dairy_management
+2023-01-31 11:39:39,558 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-01-31 11:39:39,787 INFO A newer version of bench is available: 5.16.0 → 5.16.1
+2023-01-31 11:39:49,348 INFO /usr/local/bin/bench --site dairy_management.com install-app dairy_management
+2023-01-31 11:40:07,343 INFO /usr/local/bin/bench start
+2023-01-31 11:40:07,598 INFO /usr/local/bin/bench serve --port 8003
+2023-01-31 11:40:07,641 INFO /usr/local/bin/bench worker
+2023-01-31 11:40:07,648 INFO /usr/local/bin/bench watch
+2023-01-31 11:40:07,649 INFO /usr/local/bin/bench schedule
+2023-01-31 11:58:55,281 INFO /usr/local/bin/bench --site dairy_management.com set-config developer_mode 1
+2023-01-31 11:59:20,972 INFO /usr/local/bin/bench start
+2023-01-31 11:59:21,241 INFO /usr/local/bin/bench serve --port 8003
+2023-01-31 11:59:21,242 INFO /usr/local/bin/bench worker
+2023-01-31 11:59:21,245 INFO /usr/local/bin/bench schedule
+2023-01-31 11:59:21,307 INFO /usr/local/bin/bench watch
+2023-01-31 12:00:01,676 INFO /usr/local/bin/bench --verbose --site all backup
+2023-01-31 13:52:51,715 INFO /usr/local/bin/bench start
+2023-01-31 13:52:51,967 INFO /usr/local/bin/bench watch
+2023-01-31 13:52:51,972 INFO /usr/local/bin/bench serve --port 8003
+2023-01-31 13:52:51,998 INFO /usr/local/bin/bench schedule
+2023-01-31 13:52:52,015 INFO /usr/local/bin/bench worker
+2023-02-01 10:13:45,921 INFO /usr/local/bin/bench start
+2023-02-01 10:13:47,609 INFO /usr/local/bin/bench schedule
+2023-02-01 10:13:47,623 INFO /usr/local/bin/bench watch
+2023-02-01 10:13:47,654 INFO /usr/local/bin/bench worker
+2023-02-01 10:13:47,676 INFO /usr/local/bin/bench serve --port 8003
+2023-02-01 12:00:02,300 INFO /usr/local/bin/bench --verbose --site all backup
+2023-02-01 16:31:25,863 INFO /usr/local/bin/bench start
+2023-02-01 16:31:26,188 INFO /usr/local/bin/bench watch
+2023-02-01 16:31:26,198 INFO /usr/local/bin/bench serve --port 8003
+2023-02-01 16:31:26,198 INFO /usr/local/bin/bench schedule
+2023-02-01 16:31:26,234 INFO /usr/local/bin/bench worker

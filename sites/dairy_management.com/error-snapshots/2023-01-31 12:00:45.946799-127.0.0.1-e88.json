@@ -1,0 +1,538 @@
+{
+ "etype": "OperationalError",
+ "evalue": "OperationalError(1054, \"Unknown column 'tabSupplier.branch' in 'where clause'\")",
+ "exception": {
+  "args": [
+   40,
+   49,
+   48,
+   53,
+   52,
+   44,
+   32,
+   34,
+   85,
+   110,
+   107,
+   110,
+   111,
+   119,
+   110,
+   32,
+   99,
+   111,
+   108,
+   117,
+   109,
+   110,
+   32,
+   39,
+   116,
+   97,
+   98,
+   83,
+   117,
+   112,
+   112,
+   108,
+   105,
+   101,
+   114,
+   46,
+   98,
+   114,
+   97,
+   110,
+   99,
+   104,
+   39,
+   32,
+   105,
+   110,
+   32,
+   39,
+   119,
+   104,
+   101,
+   114,
+   101,
+   32,
+   99,
+   108,
+   97,
+   117,
+   115,
+   101,
+   39,
+   34,
+   41
+  ],
+  "errno": [
+   52,
+   48,
+   56,
+   52
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   79,
+   112,
+   101,
+   114,
+   97,
+   116,
+   105,
+   111,
+   110,
+   97,
+   108,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://127.0.0.1:8003/api/method/frappe.desk.search.search_link' [POST]>)",
+   "dump": {
+    "frappe. api": "<module 'frappe.api' from '/home/abhishek/dairy_management/apps/frappe/frappe/api.py'>",
+    "frappe.api. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>",
+    "response": "None"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "67": "",
+    "68": "\t\telif request.path.startswith(\"/api/\"):",
+    "69": "\t\t\tresponse = frappe.api.handle()",
+    "70": "",
+    "71": "\t\telif request.path.startswith(\"/backups\"):"
+   },
+   "lnum": 69
+  },
+  {
+   "call": "()",
+   "dump": {
+    "frappe. handler": "<module 'frappe.handler' from '/home/abhishek/dairy_management/apps/frappe/frappe/handler.py'>",
+    "frappe.handler. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/api.py",
+   "func": "handle",
+   "lines": {
+    "52": "\tif call == \"method\":",
+    "53": "\t\tfrappe.local.form_dict.cmd = doctype",
+    "54": "\t\treturn frappe.handler.handle()",
+    "55": "",
+    "56": "\telif call == \"resource\":"
+   },
+   "lnum": 54
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cmd": "'frappe.desk.search.search_link'",
+    "data": "None",
+    "global execute_cmd": "<function execute_cmd>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/handler.py",
+   "func": "handle",
+   "lines": {
+    "43": "",
+    "44": "\tif cmd != \"login\":",
+    "45": "\t\tdata = execute_cmd(cmd)",
+    "46": "",
+    "47": "\t# data can be an empty string or list which are valid responses"
+   },
+   "lnum": 45
+  },
+  {
+   "call": "(cmd='frappe.desk.search.search_link', from_async=False)",
+   "dump": {
+    "frappe. call": "<function call>",
+    "frappe. form_dict": "{'txt': '', 'doctype': 'Supplier', 'ignore_user_...ull]]]', 'cmd': 'frappe.desk.search.search_link'}",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>",
+    "method": "<function search_link>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/handler.py",
+   "func": "execute_cmd",
+   "lines": {
+    "81": "\t\tis_valid_http_method(method)",
+    "82": "",
+    "83": "\treturn frappe.call(method, **frappe.form_dict)",
+    "84": "",
+    "85": ""
+   },
+   "lnum": 83
+  },
+  {
+   "call": "(fn=<function search_link>, *args=(), **kwargs={'cmd': 'frappe.desk.search.search_link', 'doctype': 'Supplier', 'filters': '[[\"Supplier\",\"branch\",\"in\",[null]]]', 'ignore_user_permissions': '0', 'reference_doctype': 'Deduction Master', 'txt': ''})",
+   "dump": {
+    "args": "()",
+    "fn": "<function search_link>",
+    "newargs": "{'doctype': 'Supplier', 'filters': '[[\"Supplier\",\"branch\",\"in\",[null]]]', 'ignore_user_permissions': '0', 'reference_doctype': 'Deduction Master', 'txt': ''}"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py",
+   "func": "call",
+   "lines": {
+    "1605": "\tnewargs = get_newargs(fn, kwargs)",
+    "1606": "",
+    "1607": "\treturn fn(*args, **newargs)",
+    "1608": "",
+    "1609": ""
+   },
+   "lnum": 1607
+  },
+  {
+   "call": "(doctype='Supplier', txt='', query=None, filters='[[\"Supplier\",\"branch\",\"in\",[null]]]', page_length=20, searchfield=None, reference_doctype='Deduction Master', ignore_user_permissions='0')",
+   "dump": {
+    "doctype": "'Supplier'",
+    "filters": "'[[\"Supplier\",\"branch\",\"in\",[null]]]'",
+    "global search_widget": "<function search_widget>",
+    "ignore_user_permissions": "'0'",
+    "page_length": "20",
+    "query": "None",
+    "reference_doctype": "'Deduction Master'",
+    "searchfield": "None",
+    "txt": "''",
+    "txt. strip": "<built-in method strip of str object>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/desk/search.py",
+   "func": "search_link",
+   "lines": {
+    "33": "\tignore_user_permissions=False,",
+    "34": "):",
+    "35": "\tsearch_widget(",
+    "36": "\t\tdoctype,",
+    "37": "\t\ttxt.strip(),"
+   },
+   "lnum": 35
+  },
+  {
+   "call": "(doctype='Supplier', txt='', query=None, searchfield='name', start=0, page_length=20, filters=[['Supplier', 'branch', 'in', [None]], ['Supplier', 'disabled', '!=', 1]], filter_fields=None, as_dict=False, reference_doctype='Deduction Master', ignore_user_permissions='0')",
+   "dump": {
+    "as_dict": "False",
+    "as_list": "undefined",
+    "doctype": "'Supplier'",
+    "fields": "['name', 'supplier_name', 'supplier_group']",
+    "filters": "[['Supplier', 'branch', 'in', [None]], ['Supplier', 'disabled', '!=', 1]]",
+    "formatted_fields": "['`tabSupplier`.`name`', '`tabSupplier`.`supplier_name`', '`tabSupplier`.`supplier_group`', \"locate('', `tabSupplier`.`name`) as `_relevance`\"]",
+    "frappe. get_list": "<function get_list>",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>",
+    "ignore_permissions": "0",
+    "limit_page_length": "undefined",
+    "limit_start": "undefined",
+    "meta": "<Meta: Supplier>",
+    "meta. translated_doctype": "0",
+    "or_filters": "[]",
+    "order_by": "'_relevance, `tabSupplier`.`modified` ASC, `tabSupplier`.idx desc'",
+    "page_length": "20",
+    "reference_doctype": "'Deduction Master'",
+    "start": "0",
+    "strict": "undefined",
+    "values": "undefined"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/desk/search.py",
+   "func": "search_widget",
+   "lines": {
+    "192": "\t\t\t)",
+    "193": "",
+    "194": "\t\t\tvalues = frappe.get_list(",
+    "195": "\t\t\t\tdoctype,",
+    "196": "\t\t\t\tfilters=filters,"
+   },
+   "lnum": 194
+  },
+  {
+   "call": "(doctype='Supplier', *args=(), **kwargs={'as_list': True, 'fields': ['`tabSupplier`.`name`', '`tabSupplier`.`supplier_name`', '`tabSupplier`.`supplier_group`', \"locate('', `tabSupplier`.`name`) as `_relevance`\"], 'filters': [['Supplier', 'branch', 'in', [None]], ['Supplier', 'disabled', '!=', 1]], 'ignore_permissions': 0, 'limit_page_length': 20, 'limit_start': 0, 'or_filters': [], 'order_by': '_relevance, `tabSupplier`.`modified` ASC, `tabSupplier`.idx desc', 'reference_doctype': 'Deduction Master', 'strict': False})",
+   "dump": {
+    ").execute": "undefined",
+    "args": "()",
+    "doctype": "'Supplier'",
+    "frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>",
+    "frappe. model": "<module 'frappe.model' from '/home/abhishek/dairy_management/apps/frappe/frappe/model/__init__.py'>",
+    "frappe.model. db_query": "<module 'frappe.model.db_query' from '/home/abhi...management/apps/frappe/frappe/model/db_query.py'>",
+    "frappe.model.db_query. DatabaseQuery": "<class 'frappe.model.db_query.DatabaseQuery'>",
+    "kwargs": "{'as_list': True, 'fields': ['`tabSupplier`.`name`', '`tabSupplier`.`supplier_name`', '`tabSupplier`.`supplier_group`', \"locate('', `tabSupplier`.`name`) as `_relevance`\"], 'filters': [['Supplier', 'branch', 'in', [None]], ['Supplier', 'disabled', '!=', 1]], 'ignore_permissions': 0, 'limit_page_length': 20, 'limit_start': 0, 'or_filters': [], 'order_by': '_relevance, `tabSupplier`.`modified` ASC, `tabSupplier`.idx desc', 'reference_doctype': 'Deduction Master', 'strict': False}"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py",
+   "func": "get_list",
+   "lines": {
+    "1894": "\timport frappe.model.db_query",
+    "1895": "",
+    "1896": "\treturn frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)",
+    "1897": "",
+    "1898": ""
+   },
+   "lnum": 1896
+  },
+  {
+   "call": "(self=<frappe.model.db_query.DatabaseQuery object>, fields=['`tabSupplier`.`name`', '`tabSupplier`.`supplier_name`', '`tabSupplier`.`supplier_group`', \"locate('', `tabSupplier`.`name`) as `_relevance`\"], filters=[['Supplier', 'branch', 'in', [None]], ['Supplier', 'disabled', '!=', 1]], or_filters=[], docstatus=None, group_by=None, order_by='_relevance, `tabSupplier`.`modified` ASC, `tabSupplier`.idx desc', limit_start=0, limit_page_length=20, as_list=True, with_childnames=False, debug=False, ignore_permissions=0, user=None, with_comment_count=False, join='left join', distinct=False, start=None, page_length=None, limit=None, ignore_ifnull=False, save_user_settings=False, save_user_settings_fields=False, update=None, add_total_row=None, user_settings=None, reference_doctype='Deduction Master', run=True, strict=False, pluck=None, ignore_ddl=False, parent_doctype=None)",
+   "dump": {
+    "result": "undefined",
+    "self": "<frappe.model.db_query.DatabaseQuery object>",
+    "self. build_and_run": "<bound method DatabaseQuery.build_and_run of <frappe.model.db_query.DatabaseQuery object>>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/model/db_query.py",
+   "func": "execute",
+   "lines": {
+    "170": "\t\t\treturn []",
+    "171": "",
+    "172": "\t\tresult = self.build_and_run()",
+    "173": "",
+    "174": "\t\tif with_comment_count and not as_list and self.doctype:"
+   },
+   "lnum": 172
+  },
+  {
+   "call": "(self=<frappe.model.db_query.DatabaseQuery object>)",
+   "dump": {
+    "as_dict": "undefined",
+    "debug": "undefined",
+    "frappe. db": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "frappe.db. sql": "<bound method Database.sql of <frappe.database.mariadb.database.MariaDBDatabase object>>",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>",
+    "ignore_ddl": "undefined",
+    "query": "'select `tabSupplier`.`name`, `tabSupplier`.`supp... ASC, `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0'",
+    "run": "undefined",
+    "self": "<frappe.model.db_query.DatabaseQuery object>",
+    "self. as_list": "True",
+    "self. debug": "False",
+    "self. ignore_ddl": "False",
+    "self. run": "True",
+    "self. update": "None",
+    "update": "undefined"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/model/db_query.py",
+   "func": "build_and_run",
+   "lines": {
+    "210": "\t\t)",
+    "211": "",
+    "212": "\t\treturn frappe.db.sql(",
+    "213": "\t\t\tquery,",
+    "214": "\t\t\tas_dict=not self.as_list,"
+   },
+   "lnum": 212
+  },
+  {
+   "call": "(self=<frappe.database.mariadb.database.MariaDBDatabase object>, query='select `tabSupplier`.`name`, `tabSupplier`.`supp... ASC, `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0', values=None, as_dict=False, as_list=0, formatted=0, debug=False, ignore_ddl=False, as_utf8=0, auto_commit=0, update=None, explain=False, run=True, pluck=False)",
+   "dump": {
+    "query": "'select `tabSupplier`.`name`, `tabSupplier`.`supp... ASC, `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0'",
+    "self": "<frappe.database.mariadb.database.MariaDBDatabase object>",
+    "self. _cursor": "<pymysql.cursors.Cursor object>",
+    "self._cursor. execute": "<bound method Cursor.execute of <pymysql.cursors.Cursor object>>",
+    "values": "None"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/database/database.py",
+   "func": "sql",
+   "lines": {
+    "216": "",
+    "217": "\t\ttry:",
+    "218": "\t\t\tself._cursor.execute(query, values)",
+    "219": "\t\texcept Exception as e:",
+    "220": "\t\t\tif self.is_syntax_error(e):"
+   },
+   "lnum": 218
+  },
+  {
+   "call": "(self=<pymysql.cursors.Cursor object>, query='select `tabSupplier`.`name`, `tabSupplier`.`supp... ASC, `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0', args=None)",
+   "dump": {
+    "query": "'select `tabSupplier`.`name`, `tabSupplier`.`supp... ASC, `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0'",
+    "result": "undefined",
+    "self": "<pymysql.cursors.Cursor object>",
+    "self. _query": "<bound method Cursor._query of <pymysql.cursors.Cursor object>>"
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/cursors.py",
+   "func": "execute",
+   "lines": {
+    "146": "        query = self.mogrify(query, args)",
+    "147": "",
+    "148": "        result = self._query(query)",
+    "149": "        self._executed = query",
+    "150": "        return result"
+   },
+   "lnum": 148
+  },
+  {
+   "call": "(self=<pymysql.cursors.Cursor object>, q='select `tabSupplier`.`name`, `tabSupplier`.`supp... ASC, `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0')",
+   "dump": {
+    "conn": "<pymysql.connections.Connection object>",
+    "conn. query": "<bound method Connection.query of <pymysql.connections.Connection object>>",
+    "q": "'select `tabSupplier`.`name`, `tabSupplier`.`supp... ASC, `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0'"
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/cursors.py",
+   "func": "_query",
+   "lines": {
+    "308": "        self._last_executed = q",
+    "309": "        self._clear_result()",
+    "310": "        conn.query(q)",
+    "311": "        self._do_get_result()",
+    "312": "        return self.rowcount"
+   },
+   "lnum": 310
+  },
+  {
+   "call": "(self=<pymysql.connections.Connection object>, sql=b\"select `tabSupplier`.`name`, `tabSupplier`.`su... `tabSupplier`.idx desc\\n\\t\\t\\tlimit 20 offset 0\", unbuffered=False)",
+   "dump": {
+    "self": "<pymysql.connections.Connection object>",
+    "self. _affected_rows": "0",
+    "self. _read_query_result": "<bound method Connection._read_query_result of <pymysql.connections.Connection object>>",
+    "unbuffered": "False"
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py",
+   "func": "query",
+   "lines": {
+    "546": "            sql = sql.encode(self.encoding, \"surrogateescape\")",
+    "547": "        self._execute_command(COMMAND.COM_QUERY, sql)",
+    "548": "        self._affected_rows = self._read_query_result(unbuffered=unbuffered)",
+    "549": "        return self._affected_rows",
+    "550": ""
+   },
+   "lnum": 548
+  },
+  {
+   "call": "(self=<pymysql.connections.Connection object>, unbuffered=False)",
+   "dump": {
+    "result": "<pymysql.connections.MySQLResult object>",
+    "result. read": "<bound method MySQLResult.read of <pymysql.connections.MySQLResult object>>"
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py",
+   "func": "_read_query_result",
+   "lines": {
+    "773": "        else:",
+    "774": "            result = MySQLResult(self)",
+    "775": "            result.read()",
+    "776": "        self._result = result",
+    "777": "        if result.server_status is not None:"
+   },
+   "lnum": 775
+  },
+  {
+   "call": "(self=<pymysql.connections.MySQLResult object>)",
+   "dump": {
+    "first_packet": "undefined",
+    "self": "<pymysql.connections.MySQLResult object>",
+    "self. connection": "None",
+    "self.connection._read_packet": "undefined"
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py",
+   "func": "read",
+   "lines": {
+    "1154": "    def read(self):",
+    "1155": "        try:",
+    "1156": "            first_packet = self.connection._read_packet()",
+    "1157": "",
+    "1158": "            if first_packet.is_ok_packet():"
+   },
+   "lnum": 1156
+  },
+  {
+   "call": "(self=<pymysql.connections.Connection object>, packet_type=<class 'pymysql.protocol.MysqlPacket'>)",
+   "dump": {
+    "packet": "<pymysql.protocol.MysqlPacket object>",
+    "packet. raise_for_error": "<bound method MysqlPacket.raise_for_error of <pymysql.protocol.MysqlPacket object>>"
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py",
+   "func": "_read_packet",
+   "lines": {
+    "723": "            if self._result is not None and self._result.unbuffered_active is True:",
+    "724": "                self._result.unbuffered_active = False",
+    "725": "            packet.raise_for_error()",
+    "726": "        return packet",
+    "727": ""
+   },
+   "lnum": 725
+  },
+  {
+   "call": "(self=<pymysql.protocol.MysqlPacket object>)",
+   "dump": {
+    "err. raise_mysql_exception": "<function raise_mysql_exception>",
+    "global err": "<module 'pymysql.err' from '/home/abhishek/dairy...env/lib/python3.10/site-packages/pymysql/err.py'>",
+    "self": "<pymysql.protocol.MysqlPacket object>",
+    "self. _data": "b\"\\xff\\x1e\\x04#42S22Unknown column 'tabSupplier.branch' in 'where clause'\""
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/protocol.py",
+   "func": "raise_for_error",
+   "lines": {
+    "219": "        if DEBUG:",
+    "220": "            print(\"errno =\", errno)",
+    "221": "        err.raise_mysql_exception(self._data)",
+    "222": "",
+    "223": "    def dump(self):"
+   },
+   "lnum": 221
+  },
+  {
+   "call": "(data=b\"\\xff\\x1e\\x04#42S22Unknown column 'tabSupplier.branch' in 'where clause'\")",
+   "dump": {
+    "errno": "1054",
+    "errorclass": "<class 'pymysql.err.OperationalError'>",
+    "errval": "\"Unknown column 'tabSupplier.branch' in 'where clause'\""
+   },
+   "file": "/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/err.py",
+   "func": "raise_mysql_exception",
+   "lines": {
+    "139": "    errval = data[9:].decode(\"utf-8\", \"replace\")",
+    "140": "    errorclass = error_map.get(errno)",
+    "141": "    if errorclass is None:",
+    "142": "        errorclass = InternalError if errno < 1000 else OperationalError",
+    "143": "    raise errorclass(errno, errval)"
+   },
+   "lnum": 143
+  }
+ ],
+ "locals": {
+  "data": "b\"\\xff\\x1e\\x04#42S22Unknown column 'tabSupplier.branch' in 'where clause'\"",
+  "errno": "1054",
+  "errorclass": "<class 'pymysql.err.OperationalError'>",
+  "errval": "Unknown column 'tabSupplier.branch' in 'where clause'"
+ },
+ "pyver": "Python 3.10.6: /home/abhishek/dairy_management/env/bin/python (prefix: /home/abhishek/dairy_management/env)",
+ "timestamp": "2023-01-31 12:00:45.947054",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/app.py\", line 69, in application\n    response = frappe.api.handle()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/api.py\", line 54, in handle\n    return frappe.handler.handle()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/handler.py\", line 45, in handle\n    data = execute_cmd(cmd)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/handler.py\", line 83, in execute_cmd\n    return frappe.call(method, **frappe.form_dict)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1607, in call\n    return fn(*args, **newargs)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/desk/search.py\", line 35, in search_link\n    search_widget(\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/desk/search.py\", line 194, in search_widget\n    values = frappe.get_list(\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1896, in get_list\n    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/model/db_query.py\", line 172, in execute\n    result = self.build_and_run()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/model/db_query.py\", line 212, in build_and_run\n    return frappe.db.sql(\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/database/database.py\", line 218, in sql\n    self._cursor.execute(query, values)\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/cursors.py\", line 148, in execute\n    result = self._query(query)\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/cursors.py\", line 310, in _query\n    conn.query(q)\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py\", line 548, in query\n    self._affected_rows = self._read_query_result(unbuffered=unbuffered)\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py\", line 775, in _read_query_result\n    result.read()\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py\", line 1156, in read\n    first_packet = self.connection._read_packet()\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/connections.py\", line 725, in _read_packet\n    packet.raise_for_error()\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/protocol.py\", line 221, in raise_for_error\n    err.raise_mysql_exception(self._data)\n  File \"/home/abhishek/dairy_management/env/lib/python3.10/site-packages/pymysql/err.py\", line 143, in raise_mysql_exception\n    raise errorclass(errno, errval)\npymysql.err.OperationalError: (1054, \"Unknown column 'tabSupplier.branch' in 'where clause'\")\n"
+}

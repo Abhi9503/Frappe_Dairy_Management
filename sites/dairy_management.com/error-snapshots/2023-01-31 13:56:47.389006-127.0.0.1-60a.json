@@ -1,0 +1,350 @@
+{
+ "etype": "AttributeError",
+ "evalue": "AttributeError(\"'NoneType' object has no attribute 'split'\")",
+ "exception": {
+  "args": [
+   40,
+   34,
+   39,
+   78,
+   111,
+   110,
+   101,
+   84,
+   121,
+   112,
+   101,
+   39,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   32,
+   104,
+   97,
+   115,
+   32,
+   110,
+   111,
+   32,
+   97,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   32,
+   39,
+   115,
+   112,
+   108,
+   105,
+   116,
+   39,
+   34,
+   44,
+   41
+  ],
+  "name": [
+   39,
+   115,
+   112,
+   108,
+   105,
+   116,
+   39
+  ],
+  "obj": [
+   78,
+   111,
+   110,
+   101
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   65,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://127.0.0.1:8003/api/method/run_doc_method' [POST]>)",
+   "dump": {
+    "frappe. api": "<module 'frappe.api' from '/home/abhishek/dairy_management/apps/frappe/frappe/api.py'>",
+    "frappe.api. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>",
+    "response": "None"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "67": "",
+    "68": "\t\telif request.path.startswith(\"/api/\"):",
+    "69": "\t\t\tresponse = frappe.api.handle()",
+    "70": "",
+    "71": "\t\telif request.path.startswith(\"/backups\"):"
+   },
+   "lnum": 69
+  },
+  {
+   "call": "()",
+   "dump": {
+    "frappe. handler": "<module 'frappe.handler' from '/home/abhishek/dairy_management/apps/frappe/frappe/handler.py'>",
+    "frappe.handler. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/api.py",
+   "func": "handle",
+   "lines": {
+    "52": "\tif call == \"method\":",
+    "53": "\t\tfrappe.local.form_dict.cmd = doctype",
+    "54": "\t\treturn frappe.handler.handle()",
+    "55": "",
+    "56": "\telif call == \"resource\":"
+   },
+   "lnum": 54
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cmd": "'run_doc_method'",
+    "data": "None",
+    "global execute_cmd": "<function execute_cmd>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/handler.py",
+   "func": "handle",
+   "lines": {
+    "43": "",
+    "44": "\tif cmd != \"login\":",
+    "45": "\t\tdata = execute_cmd(cmd)",
+    "46": "",
+    "47": "\t# data can be an empty string or list which are valid responses"
+   },
+   "lnum": 45
+  },
+  {
+   "call": "(cmd='run_doc_method', from_async=False)",
+   "dump": {
+    "frappe. call": "<function call>",
+    "frappe. form_dict": "{'docs': '{\"docstatus\":0,\"doctype\":\"Deduction Pr...', 'method': 'set_date', 'cmd': 'run_doc_method'}",
+    "global frappe": "<module 'frappe' from '/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py'>",
+    "method": "<function run_doc_method>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/handler.py",
+   "func": "execute_cmd",
+   "lines": {
+    "81": "\t\tis_valid_http_method(method)",
+    "82": "",
+    "83": "\treturn frappe.call(method, **frappe.form_dict)",
+    "84": "",
+    "85": ""
+   },
+   "lnum": 83
+  },
+  {
+   "call": "(fn=<function run_doc_method>, *args=(), **kwargs={'cmd': 'run_doc_method', 'docs': '{\"docstatus\":0,\"doctype\":\"Deduction Process\",\"na...h_id\":\"Branch-Dudhganga-0002\",\"supplier_list\":[]}', 'method': 'set_date'})",
+   "dump": {
+    "args": "()",
+    "fn": "<function run_doc_method>",
+    "newargs": "{'docs': '{\"docstatus\":0,\"doctype\":\"Deduction Process\",\"na...h_id\":\"Branch-Dudhganga-0002\",\"supplier_list\":[]}', 'method': 'set_date'}"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py",
+   "func": "call",
+   "lines": {
+    "1605": "\tnewargs = get_newargs(fn, kwargs)",
+    "1606": "",
+    "1607": "\treturn fn(*args, **newargs)",
+    "1608": "",
+    "1609": ""
+   },
+   "lnum": 1607
+  },
+  {
+   "call": "(method='set_date', docs={'docstatus': 0, 'doctype': 'Deduction Process',...d': 'Branch-Dudhganga-0002', 'supplier_list': []}, dt=None, dn=None, arg=None, args=None)",
+   "dump": {
+    "doc": "<DeductionProcess: new-deduction-process-1>",
+    "doc. run_method": "<bound method Document.run_method of <DeductionProcess: new-deduction-process-1>>",
+    "method": "'set_date'",
+    "response": "undefined"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/handler.py",
+   "func": "run_doc_method",
+   "lines": {
+    "302": "",
+    "303": "\tif not fnargs or (len(fnargs) == 1 and fnargs[0] == \"self\"):",
+    "304": "\t\tresponse = doc.run_method(method)",
+    "305": "",
+    "306": "\telif \"args\" in fnargs or not isinstance(args, dict):"
+   },
+   "lnum": 304
+  },
+  {
+   "call": "(self=<DeductionProcess: new-deduction-process-1>, method='set_date', *args=(), **kwargs={})",
+   "dump": {
+    "Document. hook": "<function Document.hook>",
+    "args": "()",
+    "fn": "<function Document.run_method.<locals>.fn>",
+    "global Document": "<class 'frappe.model.document.Document'>",
+    "kwargs": "{}",
+    "out": "undefined",
+    "self": "<DeductionProcess: new-deduction-process-1>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py",
+   "func": "run_method",
+   "lines": {
+    "907": "",
+    "908": "\t\tfn.__name__ = str(method)",
+    "909": "\t\tout = Document.hook(fn)(self, *args, **kwargs)",
+    "910": "",
+    "911": "\t\tself.run_notifications(method)"
+   },
+   "lnum": 909
+  },
+  {
+   "call": "(self=<DeductionProcess: new-deduction-process-1>, *args=(), **kwargs={})",
+   "dump": {
+    "args": "()",
+    "composed": "<function Document.hook.<locals>.compose.<locals>.runner>",
+    "kwargs": "{}",
+    "method": "'set_date'",
+    "self": "<DeductionProcess: new-deduction-process-1>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py",
+   "func": "composer",
+   "lines": {
+    "1257": "",
+    "1258": "\t\t\tcomposed = compose(f, *hooks)",
+    "1259": "\t\t\treturn composed(self, method, *args, **kwargs)",
+    "1260": "",
+    "1261": "\t\treturn composer"
+   },
+   "lnum": 1259
+  },
+  {
+   "call": "(self=<DeductionProcess: new-deduction-process-1>, method='set_date', *args=(), **kwargs={})",
+   "dump": {
+    "add_to_return_value": "<function Document.hook.<locals>.add_to_return_value>",
+    "args": "()",
+    "fn": "<function Document.run_method.<locals>.fn>",
+    "kwargs": "{}",
+    "self": "<DeductionProcess: new-deduction-process-1>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py",
+   "func": "runner",
+   "lines": {
+    "1239": "\t\tdef compose(fn, *hooks):",
+    "1240": "\t\t\tdef runner(self, method, *args, **kwargs):",
+    "1241": "\t\t\t\tadd_to_return_value(self, fn(self, *args, **kwargs))",
+    "1242": "\t\t\t\tfor f in hooks:",
+    "1243": "\t\t\t\t\tadd_to_return_value(self, f(self, method, *args, **kwargs))"
+   },
+   "lnum": 1241
+  },
+  {
+   "call": "(self=<DeductionProcess: new-deduction-process-1>, *args=(), **kwargs={})",
+   "dump": {
+    "args": "()",
+    "kwargs": "{}",
+    "method_object": "<bound method DeductionProcess.set_date of <DeductionProcess: new-deduction-process-1>>"
+   },
+   "file": "/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py",
+   "func": "fn",
+   "lines": {
+    "904": "\t\t\t# If method found in __dict__, expect it to be callable",
+    "905": "\t\t\tif method in self.__dict__ or callable(method_object):",
+    "906": "\t\t\t\treturn method_object(*args, **kwargs)",
+    "907": "",
+    "908": "\t\tfn.__name__ = str(method)"
+   },
+   "lnum": 906
+  },
+  {
+   "call": "(self=<DeductionProcess: new-deduction-process-1>)",
+   "dump": {
+    "self": "<DeductionProcess: new-deduction-process-1>",
+    "self. first_date": "None",
+    "self.first_date.split": "undefined",
+    "x": "undefined"
+   },
+   "file": "/home/abhishek/dairy_management/apps/dairy_management/dairy_management/dairy_management/doctype/deduction_process/deduction_process.py",
+   "func": "set_date",
+   "lines": {
+    "187": "                            self.last_date = Enddate",
+    "188": "        elif billperiod == \"10\":",
+    "189": "            x = self.first_date.split(\"-\")",
+    "190": "            if int(x[2]) >= 1 and int(x[2]) <= 10:",
+    "191": "                self.first_date = date(int(x[0]), int(x[1]), int(1))"
+   },
+   "lnum": 189
+  }
+ ],
+ "locals": {
+  "billperiod": "10",
+  "d": "{'bill_period': '10', 'branch_name': 'Dudhganga'}",
+  "doc": "[{'bill_period': '7', 'branch_name': 'Vidyanagar'}, {'bill_period': '7', 'branch_name': 'Saidapur'}, {'bill_period': '10', 'branch_name': 'Dudhganga'}]",
+  "self": "<DeductionProcess: new-deduction-process-1>"
+ },
+ "pyver": "Python 3.10.6: /home/abhishek/dairy_management/env/bin/python (prefix: /home/abhishek/dairy_management/env)",
+ "timestamp": "2023-01-31 13:56:47.389116",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/app.py\", line 69, in application\n    response = frappe.api.handle()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/api.py\", line 54, in handle\n    return frappe.handler.handle()\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/handler.py\", line 45, in handle\n    data = execute_cmd(cmd)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/handler.py\", line 83, in execute_cmd\n    return frappe.call(method, **frappe.form_dict)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/__init__.py\", line 1607, in call\n    return fn(*args, **newargs)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/handler.py\", line 304, in run_doc_method\n    response = doc.run_method(method)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py\", line 909, in run_method\n    out = Document.hook(fn)(self, *args, **kwargs)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py\", line 1259, in composer\n    return composed(self, method, *args, **kwargs)\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py\", line 1241, in runner\n    add_to_return_value(self, fn(self, *args, **kwargs))\n  File \"/home/abhishek/dairy_management/apps/frappe/frappe/model/document.py\", line 906, in fn\n    return method_object(*args, **kwargs)\n  File \"/home/abhishek/dairy_management/apps/dairy_management/dairy_management/dairy_management/doctype/deduction_process/deduction_process.py\", line 189, in set_date\n    x = self.first_date.split(\"-\")\nAttributeError: 'NoneType' object has no attribute 'split'\n"
+}
